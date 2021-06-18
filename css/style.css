@@ -5,6 +5,10 @@ body {
 }
 section {
     height: 100vh;
+    display: none;
+}
+.section-active {
+    display: flex;
 }
 header {
     display: flex;
@@ -16,7 +20,7 @@ header {
     position: fixed;
     margin-left: 2%;
     margin-top: 2%;
-    height: 50%;
+    height: 400px;
     width: 80px;
     border-radius: 20px;
     background: #f5f5f5;
@@ -24,6 +28,9 @@ header {
              -9px -9px 18px #ffffff;
 }
 .header-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
     width: 60px;
     height: 60px;
@@ -32,8 +39,17 @@ header {
     box-shadow: inset 6px 6px 12px #c2c2c2,
                 inset -6px -6px 12px #ffffff;
 }
+.svg-icon {
+    width: 40px;
+    height: 40px;
+}
+.header-tab-active {
+    border-radius: 82px;
+    background: #f5f5f5;
+    box-shadow:  6px 6px 12px #c2c2c2,
+             -6px -6px 12px #ffffff;
+}
 .diagnostic {
-    display: flex;
     align-items: center;
     justify-content: center;
 }
