@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: 'DelaGothic';
+}
+section {
+    height: 100vh;
+}
+header {
+    display: flex;
+}
+.header {
+    position: fixed;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 50%;
+    width: 80px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    box-shadow:  9px 9px 18px #9f9f9f,
+             -9px -9px 18px #ffffff;
+}
+.diagnostic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    font-size: 48px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    box-shadow:  17px 17px 35px #9f9f9f,
+                 -17px -17px 35px #ffffff;
+}
+
+@font-face {
+    font-family: DelaGothic; /* Имя шрифта */
+    src: url('/media/fonts/DelaGothicOne-Regular.ttf'); /* Путь к файлу со шрифтом */
+}
