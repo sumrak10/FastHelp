@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #e6e2f4;
+    background-color: #e1dfe7;
     font-family: 'DelaGothic';
 }
 section {
@@ -23,9 +23,9 @@ header {
     height: 400px;
     width: 80px;
     border-radius: 20px;
-    background: #e6e2f4;
-    box-shadow:  9px 9px 18px #9f9f9f,
-             -9px -9px 18px #ffffff;
+    background: #e1dfe7;
+box-shadow:  17px 17px 24px #b2b0b6,
+             -17px -17px 24px #ffffff;
 }
 .header-tab {
     display: flex;
@@ -35,9 +35,9 @@ header {
     width: 60px;
     height: 60px;
     border-radius: 82px;
-    background: #e6e2f4;
-    box-shadow: inset 6px 6px 12px #b6b3c1,
-            inset -6px -6px 12px #ffffff;
+    background: #e1dfe7;
+    box-shadow:  6px 6px 12px #b2b0b6,
+             -6px -6px 12px #ffffff;
 }
 .svg-icon {
     width: 40px;
@@ -57,9 +57,9 @@ header {
 }
 .header-tab-active {
     border-radius: 82px;
-    background: #e6e2f4;
-    box-shadow:  6px 6px 12px #b6b3c1,
-             -6px -6px 12px #ffffff;
+    background: #e1dfe7;
+    box-shadow: inset 6px 6px 12px #b2b0b6,
+            inset -6px -6px 12px #ffffff;
 }
 .diagnostic {
     align-items: center;
@@ -73,9 +73,9 @@ header {
     height: 200px;
     font-size: 48px;
     border-radius: 20px;
-    background: #e6e2f4;
-    box-shadow:  17px 17px 35px #9f9f9f,
-                 -17px -17px 35px #ffffff;
+    background: #e1dfe7;
+box-shadow:  17px 17px 32px #bbb9c0,
+             -17px -17px 32px #ffffff;
 }
 
 @font-face {
