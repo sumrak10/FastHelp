@@ -44,13 +44,6 @@ box-shadow:  17px 17px 24px #b2b0b6,
     box-shadow:  5px 5px 10px #a4a3a9,
                  -5px -5px 10px #ffffff;
 }
-.header-tab:hover {
-    background-color: red;
-    border-radius: 50px;
-    background: #e1dfe7;
-    box-shadow:  27px 27px 54px #97959b,
-                 -27px -27px 54px #ffffff;
-}
 .svg-icon {
     width: 40px;
     height: 40px;
@@ -88,6 +81,12 @@ box-shadow:  17px 17px 24px #b2b0b6,
     background: #e1dfe7;
 box-shadow:  17px 17px 32px #bbb9c0,
              -17px -17px 32px #ffffff;
+}
+.main-button:hover {
+    border-radius: 20px;
+    background: #e1dfe7;
+    box-shadow:  27px 27px 54px #97959b,
+                 -27px -27px 54px #ffffff;
 }
 
 .cabinet {
