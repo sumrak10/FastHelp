@@ -19,6 +19,7 @@ header {
     display: flex;
 }
 .header {
+    z-index: 999;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -68,21 +69,20 @@ box-shadow:  7px 7px 14px #adacb2,
 }
 .diagnostic {
     position: relative;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin-left: 0;
 }
 .diagnostic p:first-child{
     font-size: 18px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin: auto;
 }
 .diagnostic p:last-child{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    margin: auto;
+    color: rgb(43, 43, 43);
 }
 .main-button {
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,7 +155,8 @@ box-shadow:  12px 12px 24px #adacb2,
 }
 .user-wh-data {
     /* margin: 70px; */
-    margin-right: 70px;
+    margin-right: 140px;
+    margin-left: 10px;
 }
 .slider {
     -webkit-appearance: none; 
@@ -200,7 +201,7 @@ box-shadow:  12px 12px 24px #adacb2,
 .rangecontainer {
     position: relative;
     margin: 30px;
-    margin-left: 100px;
+    /* margin-left: 10px; */
     width: 60px;
     height: 220px;
     border-radius: 50px;

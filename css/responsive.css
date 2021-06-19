@@ -1,9 +1,11 @@
 @media (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
     .header {
         flex-direction: row;
         height:80px;
         width: 320px;
-        margin-left: 5%;
         margin-top: 5%;
         z-index: 999;
     }
@@ -69,8 +71,7 @@
     }
     .user-wh-data {
         /* margin: 70px; */
-        margin-right: 10px;
-        z-index: 100;
+        margin-right: 80px;
     }
     .slider {
         border-radius: 20px;   
@@ -79,7 +80,7 @@
     }
     .rangecontainer {
         margin: 20px;
-        margin-left: 100px;
+        /* margin-left: 100px; */
         width: 60px;
         height: 250px;
     }
