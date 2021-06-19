@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         else if (x >= 40) {
             x = 40
         }
-        let ah = Number(document.getElementsByClassName('.rangecontainer')[0].style.height)
+        let ah = Number(document.getElementsByClassName('rangecontainer')[0].clientHeight)
         let v = map(x,16,40,60,ah)
         let p = document.getElementsByClassName('rangecontainer-ball')[0]
         p.style.height = String(v)+"px"
