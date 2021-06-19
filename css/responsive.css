@@ -58,6 +58,7 @@
     .user-wh-data {
         /* margin: 70px; */
         margin-right: 10px;
+        z-index: 100;
     }
     .slider {
         border-radius: 20px;   
@@ -113,5 +114,16 @@
     }
     .chat-form {
         flex-wrap: wrap;
+    }
+    .chat-form div {
+        margin: 10px;
+    }
+    .chat-map {
+        margin: 20px auto;
+        width: 90%;
+        height: 400px;
+    }
+    .yandex-map {
+        width: 100%; height: 400px;
     }
 }
