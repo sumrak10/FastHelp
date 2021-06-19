@@ -67,8 +67,14 @@ box-shadow:  17px 17px 24px #b2b0b6,
             inset -6px -6px 12px #ffffff;
 }
 .diagnostic {
+    position: relative;
     align-items: center;
     justify-content: center;
+}
+.diagnostic p{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .main-button {
     display: flex;
@@ -107,6 +113,7 @@ box-shadow:  12px 12px 24px #adacb2,
              -12px -12px 24px #ffffff;
 }
 .user-fio-photo {
+    position: relative;
     margin: 20px;
     width: 200px;
     height: 200px;
@@ -134,13 +141,14 @@ box-shadow:  12px 12px 24px #adacb2,
              -12px -12px 24px #ffffff;
 }
 .user-wh-data {
-
+    /* margin: 70px; */
+    margin-right: 70px;
 }
 .slider {
     -webkit-appearance: none; 
     appearance: none;
     border-radius: 20px;   
-    width: 100%; 
+    width: 150%; 
     height: 25px; 
     background: #e1dfe7;
     box-shadow: inset 5px 5px 10px #adacb2,
