@@ -28,13 +28,13 @@
     <section class="diagnostic">
         <div class="main-button">Пройти тест</div>
     </section>
-    <section class="cabinet section-active">
+    <section class="cabinet">
         <div class="user-fio">
             <div class="user-fio-photo"></div>
             <div class="user-fio-data">
                 <p>Уразкулов</p>
                 <p>Нурлан</p>
-                <p>Маратович</p>
+                <p>Маhатович</p>
             </div>
         </div>
         <div class="user-wh">
@@ -54,12 +54,95 @@
                 </div>
             </div>
         </div>
+        <div class="cabinet-notes">
+            <div class="note">
+                <div class="note-data">
+                    <b>Время:</b>
+                    <p>15:00</p>
+                </div>
+                <div class="note-data">
+                    <b>Дата:</b>
+                    <p>15.05.2021</p>
+                </div>
+                <div class="note-data">
+                    <b>Направление:</b>
+                    <p>Эндокринолог 13каб</p>
+                </div>
+                <div class="note-data">
+                    <b>Адрес:</b>
+                    <p>Широтная 163</p>
+                </div>
+            </div>
+            <div class="note">
+                <div class="note-data">
+                    <b>Время:</b>
+                    <p>15:00</p>
+                </div>
+                <div class="note-data">
+                    <b>Дата:</b>
+                    <p>15.05.2021</p>
+                </div>
+                <div class="note-data">
+                    <b>Направление:</b>
+                    <p>Эндокринолог 13каб</p>
+                </div>
+                <div class="note-data">
+                    <b>Адрес:</b>
+                    <p>Широтная 163</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="telemed">
-
+        <div class="screen">
+            <video id="video" width="640" height="480" autoplay></video>
+            <canvas id="canvas" width="640" height="480"></canvas>
+        </div>
+        <div class="buttons">
+            <div class="button micro button-active">
+                <svg class="svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640"><defs><path d="M299.69 481.12L338.31 481.12L338.31 583.24L299.69 583.24L299.69 481.12Z" id="c6BL3t0pT"></path><path d="" id="d2fHJ2riUY"></path><path d="M382.77 77.5C388.3 77.5 392.77 81.98 392.77 87.5C392.77 147.28 392.77 316.63 392.77 376.41C392.77 381.93 388.3 386.41 382.77 386.41C355.66 386.41 284.34 386.41 257.23 386.41C251.7 386.41 247.23 381.93 247.23 376.41C247.23 316.63 247.23 147.28 247.23 87.5C247.23 81.98 251.7 77.5 257.23 77.5C284.34 77.5 355.66 77.5 382.77 77.5Z" id="ahJ3V78zO"></path><path d="M452.98 309.06C452.98 340.09 452.98 359.48 452.98 367.24C452.98 415.07 424.34 458.26 380.28 476.87C368.32 481.92 394.82 470.73 380.28 476.87C342.03 493.03 298.89 493.2 260.51 477.35C245.41 471.11 272.51 482.3 260.51 477.35C214.82 458.47 185.02 413.92 185.02 364.48C185.02 357.09 185.02 338.62 185.02 309.06" id="d2httoxF1m"></path><clipPath id="clipaeJ0KH4ai"><use xlink:href="#d2httoxF1m" opacity="1"></use></clipPath><path d="M377 560.47C382.04 560.47 386.14 564.56 386.14 569.6C386.14 575.38 386.14 583.55 386.14 589.33C386.14 594.37 382.04 598.47 377 598.47C351.97 598.47 286.03 598.47 261 598.47C255.96 598.47 251.87 594.37 251.87 589.33C251.87 583.55 251.87 575.38 251.87 569.6C251.87 564.56 255.96 560.47 261 560.47C286.03 560.47 351.97 560.47 377 560.47Z" id="bQigNpZAh"></path></defs><g><g><g><use xlink:href="#c6BL3t0pT" opacity="1" fill="#7f4dff" fill-opacity="1"></use></g><g><g><use xlink:href="#d2fHJ2riUY" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#ahJ3V78zO" opacity="1" fill="#7f4dff" fill-opacity="1"></use></g><g><g clip-path="url(#clipaeJ0KH4ai)"><use xlink:href="#d2httoxF1m" opacity="1" fill-opacity="0" stroke="#301f5a" stroke-width="100" stroke-opacity="1"></use></g></g><g><use xlink:href="#bQigNpZAh" opacity="1" fill="#7f4dff" fill-opacity="1"></use></g></g></g></svg>
+            </div>
+            <div class="button camera button-active">
+                <svg class="svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640"><defs><path d="M403.62 310.07C432.2 293.16 496.18 255.29 524.43 238.57C534.17 232.8 546.49 239.82 546.49 251.14C546.49 283.44 546.49 357.38 546.49 390.34C546.49 400.35 535.75 406.68 527 401.83C498.23 385.9 432.47 349.47 403.96 333.69C394.76 328.59 394.57 315.43 403.62 310.07Z" id="bwZPtsve7"></path><path d="M428.17 187.75C428.17 242.32 428.17 397.68 428.17 452.25C428.17 456.86 424.43 460.59 419.82 460.59C354.56 460.59 167.12 460.59 101.86 460.59C97.25 460.59 93.51 456.86 93.51 452.25C93.51 397.68 93.51 242.32 93.51 187.75C93.51 183.14 97.25 179.41 101.86 179.41C167.12 179.41 354.56 179.41 419.82 179.41C424.43 179.41 428.17 183.14 428.17 187.75Z" id="a6uYjgQYCo"></path></defs><g><g><g><use xlink:href="#bwZPtsve7" opacity="1" fill="#301f5a" fill-opacity="1"></use><g><use xlink:href="#bwZPtsve7" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#a6uYjgQYCo" opacity="1" fill="#7f4dff" fill-opacity="1"></use><g><use xlink:href="#a6uYjgQYCo" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g></g></g></svg>
+            </div>
+            <div class="button call">
+                <svg class="svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640"><defs><path d="M299.69 481.12L338.31 481.12L338.31 583.24L299.69 583.24L299.69 481.12Z" id="c6BL3t0pT"></path><path d="" id="d2fHJ2riUY"></path><path d="M382.77 77.5C388.3 77.5 392.77 81.98 392.77 87.5C392.77 147.28 392.77 316.63 392.77 376.41C392.77 381.93 388.3 386.41 382.77 386.41C355.66 386.41 284.34 386.41 257.23 386.41C251.7 386.41 247.23 381.93 247.23 376.41C247.23 316.63 247.23 147.28 247.23 87.5C247.23 81.98 251.7 77.5 257.23 77.5C284.34 77.5 355.66 77.5 382.77 77.5Z" id="ahJ3V78zO"></path><path d="M452.98 309.06C452.98 340.09 452.98 359.48 452.98 367.24C452.98 415.07 424.34 458.26 380.28 476.87C368.32 481.92 394.82 470.73 380.28 476.87C342.03 493.03 298.89 493.2 260.51 477.35C245.41 471.11 272.51 482.3 260.51 477.35C214.82 458.47 185.02 413.92 185.02 364.48C185.02 357.09 185.02 338.62 185.02 309.06" id="d2httoxF1m"></path><clipPath id="clipaeJ0KH4ai"><use xlink:href="#d2httoxF1m" opacity="1"></use></clipPath><path d="M377 560.47C382.04 560.47 386.14 564.56 386.14 569.6C386.14 575.38 386.14 583.55 386.14 589.33C386.14 594.37 382.04 598.47 377 598.47C351.97 598.47 286.03 598.47 261 598.47C255.96 598.47 251.87 594.37 251.87 589.33C251.87 583.55 251.87 575.38 251.87 569.6C251.87 564.56 255.96 560.47 261 560.47C286.03 560.47 351.97 560.47 377 560.47Z" id="bQigNpZAh"></path></defs><g><g><g><use xlink:href="#c6BL3t0pT" opacity="1" fill="#7f4dff" fill-opacity="1"></use></g><g><g><use xlink:href="#d2fHJ2riUY" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#ahJ3V78zO" opacity="1" fill="#7f4dff" fill-opacity="1"></use></g><g><g clip-path="url(#clipaeJ0KH4ai)"><use xlink:href="#d2httoxF1m" opacity="1" fill-opacity="0" stroke="#301f5a" stroke-width="100" stroke-opacity="1"></use></g></g><g><use xlink:href="#bQigNpZAh" opacity="1" fill="#7f4dff" fill-opacity="1"></use></g></g></g></svg>
+            </div>
+        </div>
     </section>
-    <section class="chat">
-        <div>CHAT</div>
+    <section class="chat section-active">
+        <form action="GET" class="chat-form">
+            <div>
+                    <p><b>Направление: </b></p>
+                <p><select class="select-style">
+                    <option selected disabled>Выбрать</option>
+                    <option>Уролог</option>
+                    <option>Эндокринолог</option>
+                </select></p>
+            </div>
+            <div>
+                <p><b>Время:</b><br>
+                <input type="text" size="40">
+                </p>
+            </div>
+            <div>
+                <p><b>Дата:</b><br>
+                    <input type="text" size="40">
+                </p>
+            </div>
+            <div>
+                <p><b>Адрес:</b><br>
+                    <input type="text" size="40" style="width: 200px;">
+                </p>
+            </div>
+            <div>
+                <p> </p>
+                <input class="submit" type="submit" size="40" style="width: 200px;" value="Записаться" >
+            </div>
+        </form>
+        <div class="chat-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af655ac229ec4160db0df302685e57300996c9d634ca6f8d781f94e560f6960e6&amp;source=constructor" width="1000" height="437" frameborder="0"></iframe>
+        </div>
     </section>
     <script defer src="js/main.js"></script>
 </body>

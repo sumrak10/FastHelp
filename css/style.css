@@ -81,13 +81,15 @@ box-shadow:  17px 17px 32px #bbb9c0,
 }
 
 .cabinet {
-    
+    display: flexbox;
+    flex-wrap: wrap;
 }
 .user-fio {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 40px;
+    margin-left: 30px;
     margin-top: 2%;
     min-width: 40%;
     height: 300px;
@@ -155,8 +157,10 @@ box-shadow:  12px 12px 24px #adacb2,
     border-radius: 50%;   
     width: 25px;
     height: 25px;
-    background: linear-gradient(145deg, #f1eff7, #cbc9d0);
+    /* background: linear-gradient(145deg, #f1eff7, #cbc9d0); */
     cursor: pointer;
+    background-color: #7f4dff;
+    box-shadow:0 0 10px #7f4dff;
 }
 .user-wh-range {
     display: flex;
@@ -170,7 +174,6 @@ box-shadow:  12px 12px 24px #adacb2,
     width: 60px;
     height: 220px;
     border-radius: 50px;
-    border-color: solid aqua 1px;
     box-shadow:  9px 9px 18px #5a595c,
              -9px -9px 18px #ffffff;
 }
@@ -180,9 +183,124 @@ box-shadow:  12px 12px 24px #adacb2,
     width: 60px;
     height: 100px;
     border-radius: 50px;
-    background-color: aqua;
+    background-color: #7f4dff;
+    box-shadow:0 0 10px #7f4dff;
+}
+.cabinet-notes {
+    display: flexbox;
+    flex-wrap: wrap;
+    width: 50vw;
+    margin-left: 30px;
+}
+.cabinet-notes .note {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 10px;
+    padding-left: 30px;
+    width: 100%;
+    border-radius: 33px;
+    background: linear-gradient(145deg, #f1eff7, #cbc9d0);
+    box-shadow:  13px 13px 26px #a7a5ab,
+             -13px -13px 26px #ffffff;
+}
+.note .note-data{
+    margin: 20px;
 }
 
+.telemed {
+}
+.telemed .screen {
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 500px;
+    width: 84%;
+    border-radius: 20px;
+    background: #e1dfe7;
+box-shadow:  17px 17px 24px #b2b0b6,
+             -17px -17px 24px #ffffff;
+}
+.telemed .buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 2%;
+    height: 400px;
+    width: 80px;
+    border-radius: 20px;
+    background: #e1dfe7;
+    box-shadow:  17px 17px 24px #b2b0b6,
+             -17px -17px 24px #ffffff;
+}
+.telemed .buttons .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 82px;
+    background: linear-gradient(145deg, #f1eff7, #cbc9d0);
+    box-shadow:  7px 7px 14px #b9b7bd,
+             -7px -7px 14px #ffffff;
+}
+.telemed .buttons .button-active {
+    border-radius: 82px;
+    background: #e1dfe7;
+    box-shadow: inset 6px 6px 12px #b2b0b6,
+            inset -6px -6px 12px #ffffff;
+}
+.chat {
+    flex-direction: column;
+}
+.chat-form {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.chat-form div {
+    margin: 20px;
+}
+.chat-map {
+    background: #e1dfe7;
+box-shadow:  10px 10px 20px #a2a1a6,
+             -10px -10px 20px #ffffff;
+    width: 1000px;
+    height: auto;
+}
+select {
+    padding: 10px;
+    border-radius: 33px;
+    background: linear-gradient(145deg, #f1eff7, #cbc9d0);
+    box-shadow:  6px 6px 12px #a7a5ab,
+                -6px -6px 12px #ffffff;
+}
+input {
+    margin-top: 8px;
+	width: 100px;
+	font-size: 20px;
+	padding: 6px 0 4px 10px;
+    border-radius: 33px;
+    background: #fff;
+box-shadow:  6px 6px 12px #a7a5ab,
+             -6px -6px 12px #ffffff;
+}
+.submit {
+	cursor: pointer;
+    border-radius: 33px;
+background: linear-gradient(145deg, #f1eff7, #cbc9d0);
+box-shadow:  7px 7px 14px #a09ea4,
+             -7px -7px 14px #ffffff;
+    transition: box-shadow .2s;
+}
+.submit:hover {
+             border-radius: 33px;
+         background: linear-gradient(145deg, #f1eff7, #cbc9d0);
+         box-shadow:  10px 10px 20px #9e9ca2,
+                      -10px -10px 20px #ffffff;
+}
 @font-face {
     font-family: DelaGothic;
     src: url('/media/fonts/DelaGothicOne-Regular.ttf');

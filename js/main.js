@@ -3,10 +3,30 @@ document.addEventListener("DOMContentLoaded", () => {
     // main_button.addEventListener('click', (e) => {
     //     main_button.classList.add('')
     // })
-//     long map(long x, long in_min, long in_max, long out_min, long out_max)
-// {
-//   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-// }
+    // var video = document.getElementById('video');
+    // // Get access to the camera!
+    // if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    //     // Not adding `{ audio: true }` since we only want video now
+    //     navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+    //         video.src = window.URL.srcObject = stream;
+    //         video.play();
+    //     });
+    // } else if(navigator.getUserMedia) { // Standard
+    //     navigator.getUserMedia({ video: true }, function(stream) {
+    //         video.src = stream;
+    //         video.play();
+    //     }, errBack);
+    // } else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
+    //     navigator.webkitGetUserMedia({ video: true }, function(stream){
+    //         video.src = window.webkitURL.createObjectURL(stream);
+    //         video.play();
+    //     }, errBack);
+    // } else if(navigator.mozGetUserMedia) { // Mozilla-prefixed
+    //     navigator.mozGetUserMedia({ video: true }, function(stream){
+    //         video.src = window.URL.createObjectURL(stream);
+    //         video.play();
+    //     }, errBack);
+    // }
     function map(x, minx,maxx,miny,maxy) {
         return (x - minx) * (maxy - miny) / (maxx-minx) + miny
     }
@@ -20,16 +40,20 @@ document.addEventListener("DOMContentLoaded", () => {
         let v = map(x,16,40,60,220)
         let p = document.getElementsByClassName('rangecontainer-ball')[0]
         p.style.height = String(v)+"px"
-        let c = map(v,60,150,0,255)
-        console.log(c)
+        let c = map(v,60,150,25,230)
         if (v >= 150) {
-            c = map(v,150,220,0,255)
+            c = map(v,150,220,25,230)
             p.style.backgroundColor = "rgb("+(c)+","+(255-c)+",0)"
+            p.style.boxShadow = "0 0 10px "+"rgb("+(c)+","+(255-c)+",0)"
         }
         else {
             p.style.backgroundColor = "rgb("+(255-c)+","+(c)+",0)"
+            p.style.boxShadow = "0 0 10px "+"rgb("+(255-c)+","+(c)+",0)"
         }
     }
+    let h = Number(document.getElementById("data-h").innerHTML.split(': ')[1])
+    let w = Number(document.getElementById("data-w").innerHTML.split(': ')[1])
+    changeIMT(h / ((w/100)*(w/100)))
     let slider = document.getElementById("myRangeW");
     let output = document.getElementById("data-w");
     output.innerHTML = "Рост: "+slider.value;
