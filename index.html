@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="media\icons\cross.svg" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@595&display=swap" rel="stylesheet"></head>
+    <script src="js/preload.js"></script>
 <body>
     <header>
         <div class="header">
@@ -78,24 +79,6 @@
                     <p>Широтная 163</p>
                 </div>
             </div>
-            <div class="note">
-                <div class="note-data">
-                    <b>Время:</b>
-                    <p>15:00</p>
-                </div>
-                <div class="note-data">
-                    <b>Дата:</b>
-                    <p>15.05.2021</p>
-                </div>
-                <div class="note-data">
-                    <b>Направление:</b>
-                    <p>Эндокринолог 13каб</p>
-                </div>
-                <div class="note-data">
-                    <b>Адрес:</b>
-                    <p>Широтная 163</p>
-                </div>
-            </div>
         </div>
     </section>
     <section class="telemed">
@@ -115,7 +98,7 @@
         </div>
     </section>
     <section class="chat">
-        <form action="GET" class="chat-form">
+        <form action="GET" class="chat-form" onsubmit="return false;">
             <div>
                     <p><b>Направление: </b></p>
                 <p><select class="select-style">
@@ -149,7 +132,7 @@
             </div>
             <div>
                 <p> </p>
-                <input class="submit" type="submit" size="40" style="width: 200px;" value="Записаться" >
+                <input onclick="createNote();" id="sub" class="submit" type="submit" size="40" style="width: 200px;" value="Записаться">
             </div>
         </form>
         <div class="chat-map">
