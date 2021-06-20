@@ -295,6 +295,15 @@ box-shadow:  7px 7px 14px #adacb2,
 .chat-form div {
     margin: 20px;
 }
+
+.chat-form div:first-child p:first-child{
+    margin-top: 23px;
+    margin-bottom: 8px;
+}
+.chat-form div:first-child p:last-child {
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
 .chat-map {
     background: #e1dfe7;
 box-shadow:  10px 10px 20px #a2a1a6,
@@ -306,13 +315,15 @@ box-shadow:  10px 10px 20px #a2a1a6,
     width: 1000px; height: 437px;
 }
 select {
-    padding: 10px;
+    height: 40px;
+    padding: 8px;
     border-radius: 33px;
     background: linear-gradient(145deg, #f1eff7, #cbc9d0);
     box-shadow:  6px 6px 12px #a7a5ab,
                 -6px -6px 12px #ffffff;
 }
 input {
+    height: 26px;
     margin-top: 8px;
 	width: 100px;
 	font-size: 20px;
