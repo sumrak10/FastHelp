@@ -334,6 +334,9 @@ box-shadow:  6px 6px 12px #a7a5ab,
              -6px -6px 12px #ffffff;
 }
 .submit {
+    padding: 0;
+    text-align: center;
+    height: 40px;
 	cursor: pointer;
     border-radius: 33px;
 background: linear-gradient(145deg, #f1eff7, #cbc9d0);
