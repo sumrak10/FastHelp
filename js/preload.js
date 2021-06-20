@@ -1,13 +1,20 @@
 function createNote() {
+    var audio = new Audio('../media/sounds/notification.mp3');
+    var sound = new Howl({
+        src: ['../media/sounds/notification.mp3'],
+        onplay: function () {
+          alert('Запись добавлена! Проверьте личный кабинет');
+        }
+      });
+    sound.play();
+    // alert("Запись добавлена! Проверьте личный кабинет.")
     let sss = document.getElementsByClassName('select-style')[0].options.selectedIndex;
-    console.log(document.getElementsByTagName('option')[sss].options.selectedIndex;)
-
     let div = document.createElement('div');
     div.className = "note";
-    let time = ''
-    let date = ''
-    let dir = ''
-    let addr = ''
+    let time = document.getElementsByClassName('input-data')[0].value
+    let date = document.getElementsByClassName('input-data')[1].value
+    let dir = document.getElementsByTagName('option')[sss].innerHTML
+    let addr = document.getElementsByClassName('input-data')[2].value
     let ihtml = `
     <div class="note-data">
                 <b>Время:</b>

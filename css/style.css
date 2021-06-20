@@ -240,9 +240,7 @@ box-shadow:  12px 12px 24px #adacb2,
     margin: 20px;
 }
 
-.telemed {
-    flex-wrap: wrap;
-}
+
 .telemed .screen {
     margin-left: 2%;
     margin-top: 2%;

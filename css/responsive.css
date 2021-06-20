@@ -106,6 +106,9 @@
     .note .note-data{
         margin: 15px;
     }
+    .telemed {
+        flex-wrap: wrap;
+    }
     .telemed .screen {
         margin-left: auto;
         margin-right: auto;
