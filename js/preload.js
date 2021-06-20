@@ -1,13 +1,11 @@
 function createNote() {
-    var audio = new Audio('../media/sounds/notification.mp3');
     var sound = new Howl({
-        src: ['../media/sounds/notification.mp3'],
+        src: ['/FastHelp/media/sounds/notification.mp3'],
         onplay: function () {
           alert('Запись добавлена! Проверьте личный кабинет');
         }
       });
     sound.play();
-    // alert("Запись добавлена! Проверьте личный кабинет.")
     let sss = document.getElementsByClassName('select-style')[0].options.selectedIndex;
     let div = document.createElement('div');
     div.className = "note";
