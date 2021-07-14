@@ -84,7 +84,44 @@
     </section>
     <section class="telemed">
         <div class="screen">
-            <video id="video" width="640" height="480" autoplay></video>
+            <!-- <video id="video" width="640" height="480" autoplay></video> -->
+            <form action="/signup" method="POST">
+                <p>
+                  <label>Имя</label>
+                  <input type="text" name="first_name">
+                </p>
+                <p>
+                  <label>Фамилия</label>
+                  <input type="text" name="last_name">
+                </p>
+                <p>
+                  <label>Email</label>
+                  <input type="email" name="email">
+                </p>
+                <p>
+                  <label>Телефон</label>
+                  <input type="tel" name="phone">
+                </p>
+                <p>
+                  <label>Пароль</label>
+                  <input type="password" name="password">
+                </p>
+                <p>
+                  <label>Подтвердите пароль</label>
+                  <input type="password" name="password_confirm">
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" name="terms">
+                    Я согласен с <a href="/terms">условиями использования</a>
+                  </label>
+                </p>
+                <p>
+                  <button>
+                    Зарегистрироваться
+                  </button>
+                </p>
+              </form>
         </div>
         <div class="buttons">
             <div class="button micro button-active">
